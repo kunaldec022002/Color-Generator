@@ -11,34 +11,44 @@
     h1
     {
       text-align: center;
+      font-family: monospace;
+    }
+
+    body
+    {
+        background-color:#fff;
     }
 
     div
     {
         margin: 0 auto;
-       height: 200px;
-       width: 200px;
-       border: 1px solid #333;
+       height: 300px;
+       width: 300px;
+       border: 3px solid #000000;
        translate: all 0.4s ease;
     }
 
     input
     {
+        width: 200px;
         display: block;
         margin: 0 auto;
         margin-top: 50px;
         padding: 10px;
         border-radius: 5px;
+        border: 3px solid black;
+        text-align: center;
+      
     }
 </style>
 <body>
 
-    <h1>Color Genrator</h1>
+    <h1>Color & Border Radius Genrator</h1>
 
     <div > </div>
 
 
-    <input type="text" class="input-box"/>
+    <input type="text" class="input-box" placeholder="Enter any color & radius value"/>
 
     <script>
 

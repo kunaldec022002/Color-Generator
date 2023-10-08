@@ -13,7 +13,7 @@
       text-align: center;
     }
 
-    .container
+    div
     {
         margin: 0 auto;
        height: 200px;
@@ -22,28 +22,36 @@
        translate: all 0.4s ease;
     }
 
-    .input-box
+    input
     {
         display: block;
         margin: 0 auto;
         margin-top: 50px;
         padding: 10px;
+        border-radius: 5px;
     }
 </style>
 <body>
 
     <h1>Color Genrator</h1>
 
-    <div class="container">
-
-       
-
-    </div>
+    <div > </div>
 
 
     <input type="text" class="input-box"/>
 
     <script>
+
+        let box = document.querySelector("div");
+        input = document.querySelector("input");
+
+        input.addEventListener("input", ()=>
+        {
+            box.style.borderRadius = input.value;
+            box.style.background = input.value;
+        }
+        )
+
 
     </script>
     
